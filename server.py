@@ -19,7 +19,9 @@ def repeat_word(num, word):
         result += f'<p>{word}</p>'
     return result
 
-
+@app.route('/<random>')
+def random(random):
+    print("Sorry! No response. Try again.")
 
 if __name__=="__main__":   # Ensure this file is being run directly and not from a different module    
     app.run(debug=True)    # Run the app in debug mode.
